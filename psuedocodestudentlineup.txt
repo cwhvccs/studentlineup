@@ -1,0 +1,29 @@
+Display "Enter number of students (1–25):"
+Input number
+
+While number is less than 1 OR greater than 25
+ Display "Invalid input. Try again."
+ Input number
+
+Set up input system for reading full names
+
+Display "Enter student name 1:"
+Input name
+
+Set frontName equal to name
+Set endName equal to name
+
+For i from 2 to number
+ Display "Enter student name i:"
+ Input name
+
+ If name is less than frontName (alphabetically)
+  Set frontName equal to name
+
+ If name is greater than endName (alphabetically)
+  Set endName equal to name
+
+Display "Front of the line: " and frontName
+Display "End of the line: " and endName
+
+Stop program
